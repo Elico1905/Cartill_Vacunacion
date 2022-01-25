@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "920357424275",
+    "project_id": "cartilla-de-vacunacion-7bc61",
+    "storage_bucket": "cartilla-de-vacunacion-7bc61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920357424275:android:a298232e96d9cfaf01d166",
+        "android_client_info": {
+          "package_name": "com.gonzalo.cartilladevacunacion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920357424275-u0b3tuuji8dspk9e6g80tsmj2vhmfedg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gonzalo.cartilladevacunacion",
+            "certificate_hash": "97550f810436bb6fe851f289468a02db11f1bda6"
+          }
+        },
+        {
+          "client_id": "920357424275-me499a534gp098e2lq0v33kfi8u15ljl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCORlL49LhTDmXLF3-HfinOiURcU1KKfAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920357424275-me499a534gp098e2lq0v33kfi8u15ljl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
