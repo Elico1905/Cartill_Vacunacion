@@ -33,14 +33,14 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="13dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="Recuperar Contraseña"
+                    android:text="@string/recover_text"
                     android:textSize="30dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="30dp"
-                    android:text="Correo:"
+                    android:text="@string/recover_email"
                     android:textSize="25dp"
                     android:fontFamily="sans-serif-medium"/>
 
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
                         android:textSize="18dp"
-                        android:text="Cancelar"
+                        android:text="@string/recover_button_cancel"
                         android:textColor="@color/white"
                         android:background="@drawable/effect_radius_blue"
                         android:padding="5dp"
@@ -91,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
                         android:textSize="18dp"
-                        android:text="Recuperar"
+                        android:text="@string/recover_button_recover"
                         android:textColor="@color/white"
                         android:background="@drawable/effect_radius_blue"
                         android:padding="5dp"

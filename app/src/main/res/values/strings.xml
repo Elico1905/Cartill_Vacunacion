@@ -7,4 +7,23 @@
     <string name="login_recover">¿Olvidaste tu contraseña?</string>
     <string name="login_google">Google</string>
     <string name="login_button1">Entrar</string>
+
+    <string name="register_text">Registro</string>
+    <string name="register_email">Correo:</string>
+    <string name="register_pass">Contraseña:</string>
+    <string name="register_name">Nombre:</string>
+    <string name="register_last_name_1">Apellido Paterno:</string>
+    <string name="register_last_name_2">Apellido Materno:</string>
+    <string name="register_date_birth">Fecha De Nacimiento</string>
+    <string name="register_city">Ciudad De Nacimient</string>
+    <string name="register_nationality">Nacionalidad</string>
+    <string name="register_button_cancel">Cancelar</string>
+    <string name="register_button_register">Registrar</string>
+
+    <string name="recover_text">Recuperar Contraseña</string>
+    <string name="recover_email">Correo:</string>
+    <string name="recover_button_cancel">Cancelar</string>
+    <string name="recover_button_recover">Recuperar</string>
+
+
 </resources>

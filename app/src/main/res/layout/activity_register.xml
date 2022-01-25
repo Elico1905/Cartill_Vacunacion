@@ -21,7 +21,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,177 +36,240 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="13dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="Registro"
-                    android:textSize="30dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Correo:"
-                    android:textSize="25dp"
-                    android:fontFamily="sans-serif-medium"/>
+                    android:text="@string/register_text"
+                    android:textSize="30dp"
+                    android:paddingBottom="20dp"/>
 
-                <EditText
-                    android:id="@+id/register_email"
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Correo"
-                    android:paddingLeft="5dp"
-                    android:textColor="#3A3A3A"
-                    android:enabled="true"/>
+                    android:layout_height="match_parent">
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Contraseña:"
-                    android:textSize="25dp"
-                    android:fontFamily="sans-serif-medium"/>
-
-                <EditText
-                    android:id="@+id/register_pass"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:ems="10"
-                    android:inputType="textPassword"
-                    android:hint="Contraseña"
-                    android:paddingLeft="5dp"
-                    android:textColor="#3A3A3A"/>
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Nombre:"
-                    android:textSize="25dp"
-                    android:fontFamily="sans-serif-medium"/>
-
-                <EditText
-                    android:id="@+id/register_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Pedro"
-                    android:paddingLeft="5dp"
-                    android:textColor="#3A3A3A"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Apellido Paterno:"
-                    android:textSize="25dp"
-                    android:fontFamily="sans-serif-medium"/>
-
-                <EditText
-                    android:id="@+id/register_last_name_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Correa"
-                    android:paddingLeft="5dp"
-                    android:textColor="#3A3A3A"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Apellido Materno:"
-                    android:textSize="25dp"
-                    android:fontFamily="sans-serif-medium"/>
-
-                <EditText
-                    android:id="@+id/register_last_name_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Rivera"
-                    android:paddingLeft="5dp"
-                    android:textColor="#3A3A3A"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Edad:"
-                    android:textSize="25dp"
-                    android:fontFamily="sans-serif-medium"/>
-
-                <EditText
-                    android:id="@+id/register_years"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="28"
-                    android:paddingLeft="5dp"
-                    android:textColor="#3A3A3A"/>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="20dp"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:layout_marginTop="30dp">
-                    <TextView
-                        android:id="@+id/register_button_cancel"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textSize="18dp"
-                        android:text="Cancelar"
-                        android:textColor="@color/white"
-                        android:background="@drawable/effect_radius_blue"
-                        android:padding="5dp"
-                        android:foreground="@drawable/effect_ripple_white"
-                        android:clickable="true"/>
-                    <Space
-                        android:layout_width="20dp"
-                        android:layout_height="0dp"/>
-                    <TextView
-                        android:id="@+id/register_button_register"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textSize="18dp"
-                        android:text="Registrar"
-                        android:textColor="@color/white"
-                        android:background="@drawable/effect_radius_blue"
-                        android:padding="5dp"
-                        android:foreground="@drawable/effect_ripple_white"
-                        android:clickable="true"/>
-                </LinearLayout>
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/register_email"
+                            android:textSize="25dp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <EditText
+                            android:id="@+id/register_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Correo"
+                            android:paddingLeft="5dp"
+                            android:textColor="#3A3A3A"
+                            android:enabled="true"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/register_pass"
+                            android:textSize="25dp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <EditText
+                            android:id="@+id/register_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:ems="10"
+                            android:inputType="textPassword"
+                            android:hint="Contraseña"
+                            android:paddingLeft="5dp"
+                            android:textColor="#3A3A3A"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/register_name"
+                            android:textSize="25dp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <EditText
+                            android:id="@+id/register_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Pedro"
+                            android:paddingLeft="5dp"
+                            android:textColor="#3A3A3A"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/register_last_name_1"
+                            android:textSize="25dp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <EditText
+                            android:id="@+id/register_last_name_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Correa"
+                            android:paddingLeft="5dp"
+                            android:textColor="#3A3A3A"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/register_last_name_2"
+                            android:textSize="25dp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <EditText
+                            android:id="@+id/register_last_name_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Rivera"
+                            android:paddingLeft="5dp"
+                            android:textColor="#3A3A3A"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/register_date_birth"
+                            android:textSize="25dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:clickable="true"/>
+
+                        <EditText
+                            android:id="@+id/register_dateBirth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:hint="Fecha de nacimiento"
+                            android:paddingLeft="5dp"
+                            android:textColor="#3A3A3A"
+                            android:focusable="false"
+                            android:clickable="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/register_city"
+                            android:textSize="25dp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <EditText
+                            android:id="@+id/register_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Queretaro"
+                            android:paddingLeft="5dp"
+                            android:textColor="#3A3A3A"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/register_nationality"
+                            android:textSize="25dp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <EditText
+                            android:id="@+id/register_nationality"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Mexicana"
+                            android:paddingLeft="5dp"
+                            android:textColor="#3A3A3A"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:layout_marginTop="30dp">
+                            <TextView
+                                android:id="@+id/register_button_cancel"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="18dp"
+                                android:text="@string/register_button_cancel"
+                                android:textColor="@color/white"
+                                android:background="@drawable/effect_radius_blue"
+                                android:padding="5dp"
+                                android:foreground="@drawable/effect_ripple_white"
+                                android:clickable="true"/>
+                            <Space
+                                android:layout_width="20dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:id="@+id/register_button_register"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="18dp"
+                                android:text="@string/register_button_register"
+                                android:textColor="@color/white"
+                                android:background="@drawable/effect_radius_blue"
+                                android:padding="5dp"
+                                android:foreground="@drawable/effect_ripple_white"
+                                android:clickable="true"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </ScrollView>
 
             </LinearLayout>
+
+
+
 
 
         </androidx.cardview.widget.CardView>
