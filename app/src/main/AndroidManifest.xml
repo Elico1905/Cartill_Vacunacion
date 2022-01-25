@@ -11,7 +11,9 @@
         android:theme="@style/Theme.CartillaDeVacunacion">
         <activity
             android:name=".ActivityHome"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyTheme" />
         <activity
             android:name=".ActivityRecover"
             android:exported="false"

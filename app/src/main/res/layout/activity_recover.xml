@@ -45,7 +45,7 @@
                     android:fontFamily="sans-serif-medium"/>
 
                 <EditText
-                    android:id="@+id/register_email"
+                    android:id="@+id/recover_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -69,7 +69,7 @@
                     android:paddingEnd="20dp"
                     android:layout_marginTop="30dp">
                     <TextView
-                        android:id="@+id/register_button_cancel"
+                        android:id="@+id/recover_button_cancel"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                         android:layout_width="20dp"
                         android:layout_height="0dp"/>
                     <TextView
-                        android:id="@+id/register_button_register"
+                        android:id="@+id/recover_button_recover"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
